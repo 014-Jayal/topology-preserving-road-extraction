@@ -1,4 +1,4 @@
-# 🚀 Topology-Preserving Road Extraction using Foundation Models
+# **Topology-Preserving Road Extraction using Foundation Models**
 
 <p align="center">
   <b>ISRO SAC Internship Project</b><br>
