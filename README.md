@@ -136,8 +136,6 @@ python src/evaluation/benchmark.py
 
 ## Author
 
-[**Jayal Shah**]([https://www.linkedin.com/in/jayal-shah04/]())
-
-B.Tech Computer Engineering (AI) 
+[Jayal Shah](https://www.linkedin.com/in/jayal-shah04/)
 
 ---
