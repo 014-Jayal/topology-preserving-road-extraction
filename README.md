@@ -10,12 +10,13 @@
   <img src="https://img.shields.io/badge/Task-Road%20Segmentation-blue">
   <img src="https://img.shields.io/badge/Domain-Remote%20Sensing-green">
   <img src="https://img.shields.io/badge/Model-Vision%20Transformer-orange">
-  <img src="https://img.shields.io/badge/License-MIT-lightgrey">
+  <img src="https://img.shields.io/badge/Focus-Remote%20Sensing-green">
+  <img src="https://img.shields.io/badge/Task-Topology%20Preservation-blue">
 </p>
 
 ---
 
-## 📌 Overview
+## Overview
 
 This project presents a **topology-preserving road extraction pipeline** from satellite imagery using a modified foundation model.
 
@@ -23,7 +24,7 @@ Unlike standard segmentation approaches, the focus here is on **preserving conne
 
 ---
 
-## 🧠 Key Contributions
+## Key Contributions
 
 - MAE bypass to retain full spatial information  
 - Lightweight decoder for dense segmentation  
@@ -33,20 +34,17 @@ Unlike standard segmentation approaches, the focus here is on **preserving conne
 
 ---
 
-## 🖼️ Visual Overview
+## Visual Overview
 
-### 🔧 Architecture
+### Architecture
 ![Architecture](assets/architecture.png)
 
-### ⚙️ Pipeline
-![Pipeline](assets/pipeline.png)
-
-### ⚠️ MAE Limitation
-![MAE Issue](assets/mae_issue.png)
+### Channel Alignment for Cross-Sensor Adaptation
+![Channel Alignment](assets/channel_alignment.png)
 
 ---
 
-## 📊 Results
+## Results
 
 ### Quantitative Comparison
 
@@ -57,19 +55,17 @@ Unlike standard segmentation approaches, the focus here is on **preserving conne
 | Random Forest    | 0.0520   | 0.4479 | 0.0901   | 0.0482 |
 | SVM              | 0.0241   | 0.5746 | 0.0435   | 0.0226 |
 | CNN Baseline     | 0.2130   | 0.7581 | 0.2130   | 0.1195 |
-| ⭐ Proposed Model | **0.2065** | **0.2695** | **0.2249** | **0.1268** |
+| **Proposed Model** | **0.2065** | **0.2695** | **0.2249** | **0.1268** |
 
 ---
 
-## 🔍 Qualitative Results
+## Qualitative Results
 
-| Input | Ground Truth | Proposed |
-|------|-------------|----------|
-| ![](assets/sample_input.png) | ![](assets/sample_gt.png) | ![](assets/sample_pred.png) |
+![Qualitative Results](results/qualitative/qualitative.png)
 
 ---
 
-## ⚡ Performance
+## Performance
 
 - ~40 patches/sec (NVIDIA A100)
 - Handles large images (~18k × 16k)
@@ -77,7 +73,7 @@ Unlike standard segmentation approaches, the focus here is on **preserving conne
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 src/            → Core pipeline  
@@ -90,7 +86,7 @@ docs/           → Report / PPT
 
 ---
 
-## 🛠️ Setup
+## Setup
 
 ```bash
 pip install -r requirements.txt
@@ -98,7 +94,7 @@ pip install -r requirements.txt
 
 ---
 
-## ▶️ Run
+## Run
 
 ### Training
 ```bash
@@ -120,7 +116,7 @@ python src/evaluation/benchmark.py
 
 ---
 
-## 📚 Insights
+## Insights
 
 - Thin roads → highly sensitive to pixel shifts  
 - CNN improves recall but breaks connectivity  
@@ -129,7 +125,7 @@ python src/evaluation/benchmark.py
 
 ---
 
-## 🔮 Future Work
+## Future Work
 
 - Multi-class segmentation  
 - SAR + Optical fusion  
@@ -138,22 +134,10 @@ python src/evaluation/benchmark.py
 
 ---
 
-## 🙏 Acknowledgment
+## Author
 
-Work done at **ISRO SAC (Space Applications Centre)**  
-Guided by:
-- Dr. Indranil Misra  
-- Dr. Zalak Thakker  
+[**Jayal Shah**]([https://www.linkedin.com/in/YOUR-LINKEDIN-URL](https://www.linkedin.com/in/jayal-shah04/))
 
----
-
-## 👨‍💻 Author
-
-**Jayal Shah**  
-B.Tech AI  
+B.Tech Computer Engineering (AI) 
 
 ---
-
-## 📜 License
-
-MIT License
