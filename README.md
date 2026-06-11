@@ -5,6 +5,7 @@
   Adapting Foundation Models for Geospatial Segmentation
 </p>
 
+
 <p align="center">
   <img src="https://img.shields.io/badge/PyTorch-Deep%20Learning-red?logo=pytorch">
   <img src="https://img.shields.io/badge/Task-Road%20Segmentation-blue">
