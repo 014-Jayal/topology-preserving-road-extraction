@@ -42,6 +42,7 @@ Unlike standard segmentation approaches, the focus here is on **preserving conne
 ### Channel Alignment for Cross-Sensor Adaptation
 ![Channel Alignment](assets/channel_alignment.png)
 
+
 ---
 
 ## Results
